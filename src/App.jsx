@@ -1,4 +1,4 @@
-import "./app.css";
+import "./App.css";
 import Card from "./card";
 import Navbar from "./navbar";
 import prodimg from "../public/favicon.svg";
@@ -34,7 +34,7 @@ function App() {
       {/* <List/> */}
 
       <Comp name = "sdf"/>
-      
+
       {/* event handling */}
       {/* hooks */}
       {/* custom hooks */}
