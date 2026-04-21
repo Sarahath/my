@@ -3,6 +3,7 @@ import Card from "./card";
 import Navbar from "./navbar";
 import prodimg from "../public/favicon.svg";
 import List from "./list";
+import Comp from "./comp";
 
 function App() {
   let name = "sam";
@@ -32,6 +33,7 @@ function App() {
       {/* using loops */}
       {/* <List/> */}
 
+      <Comp name = "sdf"/>
       
       {/* event handling */}
       {/* hooks */}
