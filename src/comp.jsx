@@ -6,7 +6,7 @@ export default class Comp extends Component {
     
     return (
       <>
-        <p>{name}</p>
+        <p>{name}{age}</p>
       </>
     );
   }

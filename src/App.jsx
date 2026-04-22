@@ -4,6 +4,10 @@ import Navbar from "./navbar";
 import prodimg from "../public/favicon.svg";
 import List from "./list";
 import Comp from "./comp";
+import About from "./about";
+import Contact from "./contact";
+import { BrowserRouter , Routes ,Route } from "react-router-dom";
+import Home from "./home";
 
 function App() {
   let name = "sam";
@@ -15,12 +19,7 @@ function App() {
       {/* using js inside return */}
       {/* <h1>hello {`${name}  ${age}`} </h1> */}
       {/* props */}
-      {/* <h1>Products</h1>
-      <div id="cards">
-        <Card img={prodimg} name="prod 1" disc="prod 1 disc" price={100} />
-        <Card img={prodimg} name="prod 1" disc="prod 1 disc" price={100} />
-        <Card img={prodimg} name="prod 1" disc="prod 1 disc" price={100} />
-      </div> */}
+    
       {/* conditional rendering */}
       {/* {name == "sam" ? (
         <Card img={prodimg} name="prod 1" disc="prod 1 disc" price={100} />
@@ -33,11 +32,21 @@ function App() {
       {/* using loops */}
       {/* <List/> */}
 
-      <Comp name = "sdf"/>
-
+      {/* <Comp name="The comp" />
+      <Comp name="18" /> */}
+      {/* routing */}
       {/* event handling */}
       {/* hooks */}
       {/* custom hooks */}
+      {/* <About/>
+      <Contact/> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
