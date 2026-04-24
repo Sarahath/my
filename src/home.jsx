@@ -5,13 +5,14 @@ export default function Home() {
   let [count, setCout] = useState(0)
   return (
     <>
-      {/* <Link to={"/about"}> About </Link>
-    <Link to={"/contact"}> Contact </Link> */}
+       <Link to={"/about"}> About </Link>
+    <Link to={"/contact"}> Contact </Link> 
       {/* <a href="/about">About</a>
-    <a href="/contact">Contact</a> */}
+    <a href="/contact">Contact</a>  */}
       <p>Count : {count}</p>
-      <button onClick={() => { setCout(count + 1) }}>inc</button>
-      <button onClick={() => { setCout(count - 1) }}>dec</button>
+      <button onClick={() => { setCout(count + 1000) }}>inc +1</button><br />
+      <button onClick={() => { setCout(count - 100) }}>dec -1</button><br />
+      <button onClick={() => { setCout(count = 0) }}>move to 0</button>
       {/* useEffect,userf,usememo,usecontext,usereducer */}
     </>
   )
