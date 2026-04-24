@@ -14,11 +14,11 @@ function App() {
   let age = 10;
   return (
     <>
-      {/* component creation */}
-      {/* <Navbar /> */}
-      {/* using js inside return */}
-      {/* <h1>hello {`${name}  ${age}`} </h1> */}
-      {/* props */}
+      component creation
+       <Navbar /> 
+       using js inside return 
+       <h1>hello {`${name}  ${age}`} </h1> 
+       props
     
       {/* conditional rendering */}
       {/* {name == "sam" ? (

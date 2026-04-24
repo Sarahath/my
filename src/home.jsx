@@ -10,10 +10,11 @@ export default function Home() {
       {/* <a href="/about">About</a>
     <a href="/contact">Contact</a>  */}
       <p>Count : {count}</p>
-      <button onClick={() => { setCout(count + 1000) }}>inc +1</button><br />
-      <button onClick={() => { setCout(count - 100) }}>dec -1</button><br />
-      <button onClick={() => { setCout(count = 0) }}>move to 0</button>
+      <button onClick={() => { setCout(count + 1) }}>inc +1</button><br />
+      <button onClick={() => { setCout(count - 1) }}>dec -1</button><br />
+      <button onClick={() => { setCout(count = 0) }}>move to 0</button><br />      
       {/* useEffect,userf,usememo,usecontext,usereducer */}
     </>
   )
 }
+
