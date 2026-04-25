@@ -6,7 +6,7 @@ import List from "./list";
 import Comp from "./comp";
 import About from "./about";
 import Contact from "./contact";
-import { BrowserRouter , Routes ,Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       {/* using js inside return */}
       {/* <h1>hello {`${name}  ${age}`} </h1> */}
       {/* props */}
-    
+
       {/* conditional rendering */}
       {/* {name == "sam" ? (
         <Card img={prodimg} name="prod 1" disc="prod 1 disc" price={100} />
@@ -42,9 +42,9 @@ function App() {
       <Contact/> */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
